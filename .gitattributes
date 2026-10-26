@@ -1,0 +1,2 @@
+# Preserve upstream generated bindings verbatim apart from our link branch.
+vendor/sokol/**/*.odin whitespace=-blank-at-eof
