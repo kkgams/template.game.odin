@@ -1,24 +1,22 @@
-@header package main
-@header import sg "../vendor/sokol/gfx"
+#pragma sokol @header package main
+#pragma sokol @header import sg "../vendor/sokol/gfx"
 
-@vs vs
+#pragma sokol @vs vs
 in vec4 position;
 in vec4 color0;
 out vec4 color;
 
 void main() {
-    gl_Position = position;
-    color = color0;
+  gl_Position = position;
+  color = color0;
 }
-@end
+#pragma sokol @end
 
-@fs fs
+#pragma sokol @fs fs
 in vec4 color;
 out vec4 frag_color;
 
-void main() {
-    frag_color = color;
-}
-@end
+void main() { frag_color = color; }
+#pragma sokol @end
 
-@program triangle vs fs
+#pragma sokol @program triangle vs fs

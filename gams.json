@@ -11,16 +11,12 @@
     "keys": [
       {
         "key": "mod+alt+s",
-        "call": [
-          "project.save"
-        ],
+        "call": ["project.save"],
         "allowInput": true
       },
       {
         "key": "mod+s",
-        "call": [
-          "activeView.save"
-        ],
+        "call": ["activeView.save"],
         "allowInput": true
       }
     ],
